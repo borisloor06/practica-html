@@ -1,0 +1,424 @@
+/*Loor Barreto Boris Leonel
+    4to B
+    27/08/2021*/
+@font-face {
+    font-family: 'Icomoon';
+    font-style: normal;
+    font-weight: 300;
+    src:
+      local('icomoon'),
+      url(/fonts/icomoon.woff) format('woff'),
+      url(/fonts/icomoon.ttf) format('truetype'),
+      url(/fonts/icomoon.svg) format('svg'),
+      url(/fonts/icomoon.eot) format('embedded-opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*font-family: Icomoon;*/
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: rgba(60, 255, 245, 0.774);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    letter-spacing: .5px;
+    line-height: 150%;
+}
+
+ol {
+    list-style: none;
+}
+
+.header {
+    background-color: rgba(45, 129, 226, 0.938);
+}
+
+.header .container {
+    margin: 0px 10%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    flex-grow: 8;
+    margin: 0px 30px;
+}
+
+.menu {
+    flex-grow: 2;
+}
+
+.menu a {
+    font-family: 'Roboto', 'Helvetica';
+    font-size: 20px;
+}
+
+.menu ol {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.hero {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container {
+    width: 80%;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #fff;
+    margin: 15% 15px;
+    line-height: 150%;
+    letter-spacing: -.8px;
+}
+
+.hero h1 strong {
+    color: rgba(45, 129, 226, 0.938);
+}
+
+.title {
+    color: #008cff;
+    letter-spacing: -1.8;
+    font-size: 32px;
+    font-family: DeJaVu;
+    margin: 1% 10%;
+    padding: 15px;
+}
+
+.tratamientos {
+    background-color: rgba(68, 68, 68, 0.068);
+}
+
+.tratamientos .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.proyectos {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.proyectos-detalles {
+    margin: 0px 25%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: justify;
+    align-self: baseline;
+}
+
+.proyecto-imagen {
+    margin: 2% 25% 3%;
+    width: 50%;
+    height: 70%;
+}
+
+.proyecto-title {
+    letter-spacing: -1.8;
+    font-size: 32px;
+    font-family: 'Roboto', 'Helvetica';
+    margin: 40px 0px;
+}
+
+.proyecto-fecha {
+    letter-spacing: -.1;
+    font-size: 18px;
+    font-family: 'Lato';
+    margin: 20px 0px;
+}
+
+.proyecto-descripcion {
+    letter-spacing: -.1;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+}
+
+.nosotros {
+    height: 900px;
+}
+
+.nosotros .container {
+    margin: 0px 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    height: 670px;
+}
+
+.procedimientos {
+    background-color: rgba(182, 211, 230, 0.151);
+    width: 45%;
+    margin: 0.5%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: right;
+    padding: 1.5%;
+}
+
+.procedimientos-detail {
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.procedimientos-imagenContainer {
+    width: 80%;
+    height: 50%;
+}
+
+.procedimientos-imagen {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.procedimientos-title {
+    letter-spacing: -.2;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px 0px;
+}
+
+.procedimientos-descripcion {
+    letter-spacing: 2;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+}
+
+.procedimientos-url {
+    text-decoration: none;
+    color: rgb(17, 0, 255);
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(17, 0, 255);
+    border-radius: 5px;
+}
+.procedimientos-url:hover {
+    background-color: rgba(17, 0, 255, 0.7);
+    color:#fff
+}
+
+.form-contact .container {
+    background-color: #5eb4cee5;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.form-email {
+    margin-left: 50px;
+    flex-grow: 5;
+}
+
+.form-email>* {
+    height: 28px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-email>h3 {
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 10px;
+}
+
+.form-email>input {
+    width: 300px;
+    padding: 2px 15px;
+    border: 0.8px solid #1b0a3ae5;
+}
+
+.form-email>input:focus {
+    border: 0.5px solid #746bf0e5;
+}
+
+.form-email>button {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    background-color: rgba(45, 129, 226, 0.938);
+    color: #fff;
+}
+
+.form-email>button:hover {
+    background-color: rgba(83, 152, 231, 0.993);
+}
+
+.social {
+    margin-right: 50px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-logo{
+    width: 50px; 
+    height: 50px;
+
+}
+
+.footer .container {
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .container {
+    background-image: url(../images/optidental.png);
+    background-repeat: no-repeat;
+    background-size: 100% 540px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    selectores body header link p a footer form 
+    declaración --> color: red;
+        propiedad color, background, weith
+        valores de la propiedad red, 150px, Time New Roman 
+
+    tipo de selectores
+        selectores de etiqueta 
+            header{
+                background: pink;
+            }
+        
+        selectores descendientes
+            body header div nav ol il a {
+                text-decoration: none;
+            }
+        
+        selectores de clase 
+            .link {
+                text-decoration: none;
+                color: none;
+                background: none;
+                text-decoration: none;
+                text-decoration: none;
+                text-decoration: none;
+            }
+        
+        selectores de ID
+            #link {
+                text-decoration: none;
+            }
+Medidas
+            %, "px" , em, rem, vh 
+Colore
+            - palabras red, black ping green
+            - composición de colres rgb() rgb()
+            - composición matriz de saturación y luminosidad hls() hlsa()
+            - valores hexadecimales FF FF FF (rojo, ver, azul)
+
+FUENTES 
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+dimensiones fijas
+.hero{
+    height: 300px;
+}
+
+fondos
+.hero{
+    background-image: url(../images/fondo.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #1b2727;
+
+}
+
+bordes
+.proyectos{
+    border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid orange;
+    border-left: 10px solid pink;
+    border-top-color: aqua;
+    border-top-style: dashed;
+}
+
+Margen 
+    margin 
+    margin-top
+    margin-botton
+    margin-left
+    margin-right
+
+Rellenos
+    padding: 10px 5px 5px 10px
+    padding 10px 5px 10px
+    paddin: 8px 12px
+
+Display
+
+*/
